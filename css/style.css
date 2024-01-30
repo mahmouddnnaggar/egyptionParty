@@ -1,253 +1,119 @@
-*{
-box-sizing: border-box;
+.text-pink{
+    color: #C46F71;
 }
-#Home {
-    width: 100%;
-    height: 650px;
-    background-image: url(../img/events-heavenly-header.jpg);
-    background-repeat: no-repeat;
+.bg-pink{
+    background-color: #C46F71;
+}
+:root{
+    /* scroll-behavior: auto; */
+}
+header{
+    background-image: linear-gradient(#cc002255 20% 90%),url(../images/events-heavenly-header.jpg);
     background-position: center center;
-    background-size: 100% 100%;
-    color: white;
-    position: relative;
-}
-.homeColor{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(214, 46, 51 , 0.6);
-}
-#menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    background-color: #000000;
-    transition: 0.5s;
-    padding-top: 60px;
+    background-size: cover;
 }
 a{
-    color: white;
-}
-#Home h2{
-    margin-top: 250px;
-    text-align: center;
-    font-size: 50px;
-}
-#Home p{
-    text-align: center;
-    font-size: 30px;
-}
-span{
-    vertical-align: sub;
     cursor: pointer;
 }
-i{
-    cursor: pointer;
+h1{
+    font-size: 5rem;
 }
-.menuIcon .closeX {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+/* ***************************** */
+#aside{
+    position: fixed;
+    z-index: 99999;
+    height: 100%;
 }
-.menuIcon a {
-    padding: 20px 8px 20px 32px;
+#aside .menu{
+    display: none;
+    overflow-x: hidden;
+    background-color: black;
+    padding-top: 200px;
+}
+#aside .sideBar{
+    display: flex;
+    height: 100%;
+}
+#aside .menu li{
+    padding: 30px 50px;
+}
+#aside .menu a{
     text-decoration: none;
-    background-color: transparent;
-    display: block;
-    transition:all 0.3s;
-    color: white;
-    cursor: pointer;
-    font-size: 30px;
-}
-.menuIcon a:hover{
-color: brown;
-}
-#sliderDown h3 {
-    padding: 10px;
-    margin: 0;
-    background-color: rgba(214, 46, 51 , 0.6);
-    cursor: pointer;
+    font-size: 1.5rem;
     color: white;
 }
-#sliderDown {
-    margin: 100px auto;
-    width: 50%;
-    text-align: center !important;
+#aside .close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
-#sliderDown p{
+#aside .open{
+    display: flex;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(50%);
+}
+#aside .open a{
+    transition: 0.3s;
+    list-style: none;
+    text-decoration: none;
+    color: white;
     padding: 10px;
-    background-color: #ccc;
+}
+
+#aside a:hover{
+    color: brown;
+}
+/* ******************* */
+#duration .p{
     display: none;
 }
-#sliderDown .firstPara{
-    display: block;
+#duration .header{
+    cursor: pointer;
 }
-#count {
-    background-image: url(../img/invitation-2508607__340.jpg);
-    background-repeat: no-repeat;
+/* ******************* */
+#details {
+    background-image: linear-gradient(#cc002255 20% 80%),url(../images/invitation-2508607__340.jpg);
     background-position: center center;
-    background-size: 100% 100%;
-    position: relative;
-    height: 330px;
+    background-size: cover;
 }
-.countBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(214, 46, 51 , 0.6);
-    color: white;
-}
-.container {
-    padding: 100px 0px;
-    
-}
-.row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.countDiv {
-    padding: 50px;
-    border: 1px solid #FFF;
-    font-weight: 500;
-    font-size: 30px;
-}
-#contact-us {
-    margin-top: 100px;
-}
-#contact-us .aboutUs h2 {
-    text-transform: uppercase;
-    font-size: 35px;
-    color: #444;
-    font-weight: 900;
-    margin-bottom: 10px;
-}
-#contact-us .aboutUs p {
-    color: #777;
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    
-}
-#contact-us .contactEnd h3 {
-    color: #444;
-    font-size: 30px;
-    font-weight: 800;
-}
-
-#contact-us .contactEnd p {
-    font-size: 16px;
-    line-height: 26px;
-    color: #777;
-    font-weight: 400;
-    text-align: center;
-}
-#contact-us .contactEnd .acoountP{
-    color: #D62E33 !important;
-}
-#contact-us .icons {
-    margin-top: 50px;
-}
-#contact-us .icons p{
-    margin-bottom: 35px;
-}
-#contact-us i {
-    margin-right: 20px;
-    color: #777;
-}
-#contact-us .contactEnd .social {
-    margin-top: 60px;
-    color: #777;
-}
-#contact-us  input {
-    margin-bottom: 20px;
-    border-radius: 0;
-}
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5em + 0.75rem + 2px);
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-   
-    border: 1px solid #ced4da;
-    
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-#contact-us  textarea {
-    height: 200px;
-    resize: vertical;
-    margin-bottom: 20px;
-    border-radius: 0;
-}
-#counter {
-    font-size: 20px;
-    color: #D62E33;
-}
-#contact-us  button {
-    background-color: #D62E33;
+#details .row div div{
+    padding: 4rem;
+    border: 1px solid #fff;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 0;
-    text-transform: uppercase;
-}
-.btn {
-    
-    font-weight: 400;
-    
     text-align: center;
-   
-    cursor: pointer;
-    
-   
-   margin-top:20px;
-  vertical-align: middle;
-
-    
-    border: 1px solid transparent;
-   
-    font-size: 1rem;
-    line-height: 1.5;
-    
-   
+    font-size: 2rem;
 }
-#contact-us .contactEnd .social i {
-    margin-right: 10px;
-    border: 1px solid #999;
-    width: 40px;
-    height: 40px;
-    line-height: 42px;
-    cursor: pointer;
+/* ************************ */
+#contact span,#contact a {
+    padding-block: 1.25rem;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+.mail{
+    color: #BB2D3B !important;
+}
+.icons{
+    display: flex;
+    font-size: 1.5rem;
     text-align: center;
-    color: #777;
-    font-weight: 400;
-    transition: all 1s;
 }
-#contact-us .contactEnd .social i:hover{
-    border: 1px solid red;
-    background-color: red;
-    color: white;
+.icons a{
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    margin: 15px;
+    border: 1px solid #000 !important;
+    transition: 0.5s;
 }
-#contact-us .col-md-6 button:hover{
-    background-color: transparent;
-    color: #000000;
-    border: 1px solid red;
-    box-shadow: 20px #495057;
+.icons a:hover{
+    color:#fff !important;
+    background-color: #BB2D3B;
+    scale: 1.25;
+}
+.form input{
+    margin-block: 1rem;
 }
