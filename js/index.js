@@ -2,7 +2,7 @@
 
 // ******************** //
 $(function() {
-    $( ".first .p" ).slideDown(1);
+    $( ".first .p " ).slideDown(1);
 });
 $('.open').on('click',function(){
     $('.menu').animate({'width':"toggle"},1000);
